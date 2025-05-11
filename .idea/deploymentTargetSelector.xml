@@ -5,7 +5,10 @@
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="kostgoandroid.app">
+      <SelectionState runConfigName="kostgoandroid.admin">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="kostgoandroid.common">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
