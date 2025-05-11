@@ -87,6 +87,7 @@ fun RegisterScreen(
                     modifier = Modifier.fillMaxWidth(),
                     value = state.phoneNumber,
                     hint = stringResource(R.string.phone_number_hint),
+                    keyboardType = KeyboardType.Phone,
                     onValueChange = { onEvent(RegisterEvent.OnPhoneNumberChanged(it)) }
                 )
                 SecureOutlinedTextField(
