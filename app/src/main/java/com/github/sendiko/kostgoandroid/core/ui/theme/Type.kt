@@ -2,11 +2,18 @@ package com.github.sendiko.kostgoandroid.core.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.github.sendiko.kostgoandroid.R
 
-// Set of Material typography styles to start with
+val LalezarFont = FontFamily(
+    fonts = listOf(
+        Font(resId = R.font.lalezar, weight = FontWeight.Normal)
+    )
+)
+
 val Typography = Typography(
     bodyLarge = TextStyle(
         fontFamily = FontFamily.Default,
