@@ -20,4 +20,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "kostgoandroid"
-include(":app")
+include(":common")
+include(":admin")
