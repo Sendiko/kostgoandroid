@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">kost-android-dummy</string>
+    <string name="app_name">KostGo</string>
+
+    <!--  Common Strings  -->
+    <string name="back">back</string>
+
+    <!-- Strings for Register  -->
+    <string name="title">Register</string>
+    <string name="headline">Register your account!</string>
+    <string name="subheadline">You can change it later.</string>
+    <string name="full_name_hint">Full Name</string>
+    <string name="email_hint">Email</string>
+    <string name="phone_number_hint">Phone Number</string>
+    <string name="password_hint">Password</string>
+    <string name="password_state_on">Password is visible.</string>
+    <string name="password_state_off">Password is not visible.</string>
 </resources>
