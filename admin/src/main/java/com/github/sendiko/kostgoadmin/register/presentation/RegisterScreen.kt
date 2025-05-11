@@ -31,6 +31,7 @@ import com.github.sendiko.kostgoandroid.core.ui.theme.KostgoandroidTheme
 fun RegisterScreen(
     state: RegisterState,
     onEvent: (RegisterEvent) -> Unit,
+    onNavigateBack: () -> Unit,
 ) {
     Scaffold(
         topBar = {
@@ -38,7 +39,7 @@ fun RegisterScreen(
                 title = { /* Empty */ },
                 navigationIcon = {
                     IconButton(
-                        onClick = { }
+                        onClick = onNavigateBack
                     ) {
                         Icon(
                             imageVector = Icons.AutoMirrored.Default.ArrowBack,
@@ -113,7 +114,8 @@ private fun RegisterScreenPrev() {
     KostgoandroidTheme {
         RegisterScreen(
             state = RegisterState(),
-            onEvent = {}
+            onEvent = {},
+            onNavigateBack = {}
         )
     }
 }

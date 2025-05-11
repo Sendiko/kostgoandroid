@@ -16,6 +16,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.github.sendiko.kostgoadmin.navigation.RegisterDestination
 import com.github.sendiko.kostgoandroid.R
 import com.github.sendiko.kostgoandroid.core.ui.components.AppLogo
 import com.github.sendiko.kostgoandroid.core.ui.components.buttons.LargeButton
@@ -28,6 +29,7 @@ import com.github.sendiko.kostgoandroid.core.ui.theme.PrimaryOrange
 fun LoginScreen(
     state: LoginState,
     onEvent: (LoginEvent) -> Unit,
+    onNavigate: (Any) -> Unit,
 ) {
 
     Surface {
@@ -60,7 +62,7 @@ fun LoginScreen(
                 text = "Login"
             )
             TextButton(
-                onClick = { }
+                onClick = { onNavigate(RegisterDestination) }
             ) {
                 Text(
                     modifier = Modifier.fillMaxWidth(),
@@ -80,7 +82,8 @@ private fun LoginScreenPrev() {
     KostgoandroidTheme {
         LoginScreen(
             state = LoginState(),
-            onEvent = {}
+            onEvent = {},
+            onNavigate = {}
         )
     }
 }
