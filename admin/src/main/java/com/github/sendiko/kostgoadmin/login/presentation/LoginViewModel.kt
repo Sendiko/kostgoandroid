@@ -12,11 +12,15 @@ class LoginViewModel : ViewModel() {
 
     fun onEvent(event: LoginEvent) {
         when (event) {
-            is LoginEvent.OnEmailChanged -> TODO()
-            is LoginEvent.OnPasswordChanged -> TODO()
-            is LoginEvent.OnPasswordVisibilityChanged -> TODO()
-            LoginEvent.OnLoginClicked -> TODO()
+            is LoginEvent.OnEmailChanged -> changeEmail(event.email)
+            is LoginEvent.OnPasswordChanged -> changePassword(event.password)
+            is LoginEvent.OnPasswordVisibilityChanged -> changePasswordVisibility(event.isPasswordVisible)
+            LoginEvent.OnLoginClicked -> login()
         }
+    }
+
+    private fun login() {
+
     }
 
     private fun changeEmail(email: String) {
